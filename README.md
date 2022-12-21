@@ -100,7 +100,6 @@ https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
 - LinkedIn: (https://www.linkedin.com/in/fatuma-hussein-48149917b/)
 
 
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 <!-- CONTRIBUTING -->
@@ -140,6 +139,6 @@ Please click on the link https://nodejs.org/en/download/  to get the  setup.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

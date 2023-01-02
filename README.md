@@ -16,13 +16,12 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Portfolio: add a contact form and finish the mobile version <a name="about-project"></a>
+# 📖 [Portfolio: Desktop version <a name="about-project"></a>
 
-**[Portfolio: add a contact form and finish the mobile version]** is a project that shows you how to create your portfolio's contact form.
+**[Portfolio: Desktop version]** is a project that shows you how to create your portfolio in Desktop view.
 
 
-
-# 📖 [Portfolio:setup and mobile first] <a name="Hello-World"></a>
+To access the website created in this project, click on this link: https://fatmahussein.github.io/portfolio/
 
 
 

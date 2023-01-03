@@ -8,12 +8,12 @@
     Use % so if user increases their default font-size, it doesn’t wipe that out
 */
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* use em rather than rem due to IE9–10 rem in font shorthand bug. */
 body {
-    font: 1.8em/1.4 base, "Source Sans Pro", Verdana, sans-serif;
+  font: 1.8em/1.4 base, "Source Sans Pro", Verdana, sans-serif;
 }
 
 /*	Headings and Captions */
@@ -45,30 +45,28 @@ legend,
 .docs-button,
 .anchor-top,
 .feature__cta {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 h1,
 h2,
 .headline,
 .heading,
 .scan-heading {
-    letter-spacing: -.01em;
-
-    position: relative;
-    max-width: 64rem;
-    z-index: 1;
+  letter-spacing: -0.01em;
+  position: relative;
+  max-width: 64rem;
+  z-index: 1;
 }
 
 .headline::before,
 .heading::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -.5rem;
-    height: .5rem;
-    width: 5rem;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+  height: 0.5rem;
+  width: 5rem;
 }
 
 h1,
@@ -81,8 +79,8 @@ caption,
 .subheading,
 .title,
 .subcaption {
-    font-weight: 300;
-    line-height: 1.2;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 h3,
@@ -90,49 +88,47 @@ h4,
 .title,
 .subtitle,
 .subtitle--alt {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 h2,
 .subheading {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 
 h3,
 .title,
 .scan-heading {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h4,
 caption,
 .subtitle {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 48em) {
+  h2,
+  .subheading {
+    font-size: 3.4rem;
+  }
 
-    h2,
-    .subheading {
-        font-size: 3.4rem;
-    }
+  h3,
+  .title {
+    font-size: 2.4rem;
+  }
 
-    h3,
-    .title {
-        font-size: 2.4rem;
-    }
-
-    h4,
-    caption,
-    .subtitle {
-        font-size: 2rem;
-    }
-
+  h4,
+  caption,
+  .subtitle {
+    font-size: 2rem;
+  }
 }
 
 /* Maximum line lengths */
 details,
 p,
 li {
-    max-width: 64rem;
+  max-width: 64rem;
 }

@@ -4,25 +4,27 @@
  */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-button, input, select {
-    font: inherit;
+button,
+input,
+select {
+  font: inherit;
 }
 
 img {
-    border: 0;
+  border: 0;
 }
 
 /* Style focusable elements that need focus ring. Others reset and receive border styles in controls/color.css */
@@ -32,7 +34,7 @@ ul:focus,
 button:focus,
 summary:focus,
 [tabindex="0"]:focus {
-    outline: 1px dashed;
+  outline: 1px dashed;
 }
 
 /*
@@ -49,5 +51,5 @@ Sets a margin on select block level elements that have a previous sibling.
 * + pre,
 * + blockquote,
 * + img {
-    margin-top: 2.4rem;
+  margin-top: 2.4rem;
 }

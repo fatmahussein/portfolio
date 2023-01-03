@@ -67,6 +67,16 @@ textarea {
   right: 0;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
+}
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
   background-color: white;
@@ -80,16 +90,6 @@ textarea {
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   background-color: white;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #6070ff;
 }
 
 .nav-menu {
@@ -1106,8 +1106,8 @@ button:focus {
     display: none;
   }
 
-.nav-menu {
-    position:absolute;
+  .nav-menu {
+    position: absolute;
     left: 60%;
     flex-direction: row;
     padding-top: 5%;
@@ -1124,8 +1124,9 @@ button:focus {
     display: flex;
     align-items: center;
   }
+
   .nav-link {
-   display: flex;
+    display: flex;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;

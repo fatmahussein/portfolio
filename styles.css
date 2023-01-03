@@ -60,24 +60,68 @@ textarea {
   padding: 10px;
 }
 
-.navbar-toggler {
-  border: 0 !important;
-  justify-content: flex-end;
+.hamburger {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right:0px;
 }
-
-.navbar-toggler:focus {
-  border: 0 !important;
-  box-shadow: none !important;
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+  background-color: white;
 }
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2832, 53, 237, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  border: 0 !important;
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
 }
-
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: white;
+}
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color: #6070ff;
+}
+.nav-menu{
+  position: fixed;
+  left: -100%;
+  top:-20px;
+  padding-top: 27%;
+  padding-right: 60%;
+  flex-direction: column;
+  background-color: #4351cbc3 ;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.3s;
+  color: #ffff;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.nav-item{
+  margin:10px 0;
+  
+}
+#abt{
+  padding-right: 24%;
+}
+.nav-menu.active{
+  left: 0;
+}
 ul {
   list-style: none;
 }
+
 
 .nav-container .navbar-brand {
   width: 76px;
@@ -1037,9 +1081,6 @@ button:focus {
   transform: matrix(0.8, 0.6, 0.6, -0.8, 0, 0);
 }
 
-.offcanvas-body ul li a {
-  display: none;
-}
 
 #p10 {
   display: none;
@@ -1055,11 +1096,11 @@ button:focus {
     justify-content: space-between;
   }
 
-  .navbar-toggler {
+  .hamburger {
     display: none;
   }
 
-  .offcanvas-body ul {
+  .nav-menu {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -1069,7 +1110,7 @@ button:focus {
    
   }
 
-  .offcanvas-body ul li a {
+  .nav-link {
     display: block;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1078,9 +1119,6 @@ button:focus {
     line-height: 20px;
     align-items: center;
     text-align: center;
-  
-  }
-  .nav-link{
     transition: 0.7s ease;
   }
 

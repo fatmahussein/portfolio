@@ -18,18 +18,20 @@
 
 # 📖 [Portfolio: Desktop version <a name="about-project"></a>
 
-**[Portfolio: Desktop version]** is a project that shows you how to create your portfolio in Desktop view.
+**[Portfolio: Desktop version]** is a project that shows you how to create your portfolio in Desktop and Mobile version.
 
 
 To access the website created in this project, click on this link: https://fatmahussein.github.io/portfolio/
 
 
 
-You will learn how to use flexbox to place elements in a HTML page.
+You will learn how to use CSS Flexbox and Grid layout to place elements in a HTML page.
 
-Furthermore, In this project, you will learn to use linters to correct errors in your code.
+Furthermore, In this project, you will learn to use linters to correct errors in your code and also use Javascript DOM manipulation. 
 
 ## 🛠 Built With  <a name="built-with"></a>
+
+HTML5, CSS3 and ES6
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -93,12 +95,17 @@ https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Fatuma Hussein**
 
-- GitHub: (https://github.com/fatmahussein)
-- Twitter: (https://twitter.com/FatmaHussein200)
-- LinkedIn: (https://www.linkedin.com/in/fatuma-hussein-48149917b/)
+- GitHub: [@fatmahussein](https://github.com/fatmahussein)
+- Twitter: [@FatmaHussein200](https://twitter.com/FatmaHussein200)
+- LinkedIn: [Fatma Hussein](https://www.linkedin.com/in/fatuma-hussein-48149917b/)
 
+👤 **Gladwin Tshepo Ramantso**
+
+-GitHub: [@tsheporamantso](https://github.com/tsheporamantso)
+- Twitter: [@ramgt001](https://twitter.com/home)
+- LinkedIn: [Tshepo Gladwin Ramantso](https://www.linkedin.com/in/tshepo-ramantso-b6a35433/)
 
 
 ## 🤝 Contributing <a name="contributing"></a>

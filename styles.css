@@ -10,6 +10,10 @@ body {
   background: #f7f7f9;
 }
 
+label {
+  display: none;
+}
+
 .container-fluid {
   display: flex;
   margin-top: 1%;
@@ -27,7 +31,7 @@ textarea {
   flex-direction: column;
   background: #fff;
   width: 100%;
-  height: 730px;
+  height: 50em;
   border-bottom-left-radius: 50px;
   padding-left: 30px;
   padding-right: 30px;
@@ -56,19 +60,70 @@ textarea {
   padding: 10px;
 }
 
-.navbar-toggler {
-  border: 0 !important;
-  justify-content: flex-end;
+.hamburger {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
 }
 
-.navbar-toggler:focus {
-  border: 0 !important;
-  box-shadow: none !important;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2832, 53, 237, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  border: 0 !important;
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: white;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: -20px;
+  padding-top: 27%;
+  padding-right: 60%;
+  flex-direction: column;
+  background-color: #4351cbc3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.3s;
+  color: #ffff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 10px 0;
+}
+
+#abt {
+  padding-right: 24%;
+}
+
+.nav-menu.active {
+  left: 0;
 }
 
 ul {
@@ -90,7 +145,7 @@ ul {
 }
 
 .content {
-  padding-top: 30%;
+  padding-top: 40%;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -98,7 +153,7 @@ ul {
 
 #p2 {
   display: flex;
-  color: #6070ff;
+  color: #4d5eff;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 }
@@ -261,7 +316,7 @@ h1 {
   width: 11px;
   height: 10px;
   left: 132.98px;
-  top: 200.81px;
+  top: 100.81px;
   transform: rotate(52.97deg);
 }
 
@@ -270,7 +325,7 @@ h1 {
   width: 26.46px;
   height: 4.73px;
   left: 127.18px;
-  top: 196.59px;
+  top: 90.59px;
   background: #6070ff;
   transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
 }
@@ -287,7 +342,7 @@ h1 {
   height: 2788px;
   margin-left: auto;
   margin-right: auto;
-  top: 0;
+  top: -5em;
 }
 
 .grid-item {
@@ -551,7 +606,7 @@ h1 {
   flex-direction: column;
   position: absolute;
   height: 1263px;
-  top: 3590px;
+  top: 225em;
   margin: 0;
   border-top-right-radius: 50px;
   background: #fff;
@@ -835,7 +890,7 @@ h1 {
   padding-top: 10%;
   border-top-left-radius: 100px;
   background: #6070ff;
-  top: calc(88% - 24px / 2);
+  top: 295em;
 }
 
 .contacth {
@@ -1033,10 +1088,6 @@ button:focus {
   transform: matrix(0.8, 0.6, 0.6, -0.8, 0, 0);
 }
 
-.offcanvas-body ul li a {
-  display: none;
-}
-
 #p10 {
   display: none;
 }
@@ -1051,21 +1102,31 @@ button:focus {
     justify-content: space-between;
   }
 
-  .navbar-toggler {
+  .hamburger {
     display: none;
   }
 
-  .offcanvas-body ul {
-    display: flex;
-    justify-content: center;
+  .nav-menu {
+    position: absolute;
+    left: 60%;
     flex-direction: row;
-    gap: 2%;
-    margin-right: 10%;
+    padding-top: 5%;
+    background-color: transparent;
+    text-align: center;
+    transition: 0.3s;
+    gap: 5%;
     color: #344563;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
-  .offcanvas-body ul li a {
-    display: block;
+  .nav-link {
+    display: flex;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1073,6 +1134,7 @@ button:focus {
     line-height: 20px;
     align-items: center;
     text-align: center;
+    transition: 0.7s ease;
   }
 
   .head .items-wrapper .heading {
@@ -1158,6 +1220,21 @@ button:focus {
 
   .text {
     padding-bottom: 25%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 114px 24px;
+    gap: 88px;
+    position: relative;
+    width: 375px;
+    height: 2788px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5em;
   }
 
   .card-body {
@@ -1279,7 +1356,7 @@ button:focus {
     grid-template-columns: 1fr 1fr;
     position: absolute;
     height: 50em;
-    top: 3000px;
+    top: 190em;
     margin: 0;
     border-top-right-radius: 50px;
     background: #fff;
@@ -1381,7 +1458,7 @@ button:focus {
   }
 
   .contact-me {
-    top: 3600px;
+    top: 230em;
   }
 
   .flex-container {

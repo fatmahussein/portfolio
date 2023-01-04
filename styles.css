@@ -539,7 +539,7 @@ h1 {
   gap: 8px;
   width: 203px;
   height: 24px;
-  margin-top: 35%;
+  margin-top: 40%;
 
 }
 
@@ -632,7 +632,7 @@ h1 {
   gap: 10px;
   position: absolute;
   width: 33%;
-   margin-top: 85%;
+  margin-top: 77%;
   height: 40px;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -648,7 +648,7 @@ h1 {
   width: 42%;
   height: 40px;
   left: 46%;
-  margin-top: 85%;
+  margin-top: 77%;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
@@ -912,7 +912,7 @@ h1 {
   left: 10%;
   width: 300px;
   background-color: #EBECF0;
-  margin-top: 80%;
+  margin-top: 70%;
 }
 
 #frm9 {

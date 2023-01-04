@@ -381,12 +381,12 @@ h1 {
   justify-content: center;
   padding: 16px;
   gap: 12px;
-  width: 327px;
-  height: 900px;
+ 
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  
+  block-size: fit-content;
+
 }
 .card:hover{
   transform: scale(.9);
@@ -425,7 +425,21 @@ h1 {
   font-size: 32px;
   line-height: 44px;
 }
-
+.card-title-pop {
+  display: flex;
+  gap: 60%;
+  width: 295px;
+  height: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+.fa-times{
+  color:  #67798E;
+  size: 20%;
+}
 .card-list {
   display: flex;
   flex-direction: row;
@@ -497,7 +511,16 @@ h1 {
   line-height: 24px;
   color: #344563;
 }
-
+.text-pop {
+  width: 295px;
+  height: 66px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #344563;
+}
 .tags {
   display: flex;
   flex-direction: row;
@@ -516,7 +539,7 @@ h1 {
   gap: 8px;
   width: 203px;
   height: 24px;
-  margin-top: 53%;
+  margin-top: 35%;
 
 }
 
@@ -1135,7 +1158,13 @@ button:focus {
 .card #two {
   display: none;
 }
-
+.card-img-pop {
+  width: 100%;
+  height: 100%;
+  margin: 2%;
+  padding: 2%;
+  margin-top: -10%;
+   }
 .elp3 {
   position: absolute;
   right: 2%;
@@ -1167,6 +1196,18 @@ button:focus {
 
 #p10 {
   display: none;
+}
+.main-pop{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(0,0,0,30%);
+  top: 0%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Media query for devices greater than 768 - Desktop */
@@ -1294,6 +1335,7 @@ button:focus {
     margin: 2%;
     padding: 2%;
   }
+
 
  
   .text {

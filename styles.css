@@ -439,6 +439,7 @@ h1 {
 .fa-times{
   color:  #67798E;
   size: 20%;
+  margin-top: 5%;
 }
 .card-list {
   display: flex;

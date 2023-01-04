@@ -21,7 +21,7 @@ see.addEventListener('click', () => {
   const popup = document.createElement('div');
   popup.className = 'card-pop';
   popup.innerHTML = `
-  <h5 class="card-title-pop">Tonic<i class="fas fa-times"></i></h5>
+  <h5 class="card-title-pop">Tonic<i class="fas fa-times fa-2xs"></i></h5>
   <ul class="card-list-pop">
     <li class="card-text">CANOPY</li>
     <li class="dot"></li>

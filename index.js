@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-const see = document.querySelector('.buttonP');
+const see = document.querySelector('.project');
 
 see.addEventListener('click', () => {
   const main = document.createElement('div');

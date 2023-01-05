@@ -13,13 +13,11 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
-
 // -----------REFACTOR PROJECT SECTION----------------
 
 // Store project information in array
 
 const see = document.querySelector('.buttonP');
-
 see.addEventListener('click', () => {
   const main = document.createElement('div');
   main.className = 'main-pop';

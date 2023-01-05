@@ -17,7 +17,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 // Store project information in array
 
-const see = document.querySelector('.buttonP');
+const see = document.querySelector('.project');
 see.addEventListener('click', () => {
   const main = document.createElement('div');
   main.className = 'main-pop';
@@ -63,7 +63,7 @@ see.addEventListener('click', () => {
   });
 });
 
-const open = document.querySelector('.project');
+const open = document.querySelector('.project-Desktop');
 
 open.addEventListener('click', () => {
   const mains = document.createElement('div');

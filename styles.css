@@ -1730,7 +1730,7 @@ button:focus {
     grid-template-columns: 1fr 1fr;
     position: absolute;
     height: 50em;
-    top: 250em;
+    top: 190em;
     margin: 0;
     border-top-right-radius: 50px;
     background: #fff;

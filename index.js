@@ -37,8 +37,8 @@ const projects = [
     id: 'swap2',
     Mobimage: 'vectors/snap2.png',
     technologies: ['html', 'css', 'javascript'],
-    live: '#',
-    source: '#',
+    live: 'https://fatmahussein.github.io/portfolio/',
+    source: 'https://github.com/fatmahussein/portfolio',
     company: 'FACEBOOK',
   },
 
@@ -48,8 +48,8 @@ const projects = [
     Desktimage: 'vectors/snap.png',
     id: 'desktp',
     technologies: ['html', 'css', 'javascript'],
-    live: '#',
-    source: '#',
+    live: 'https://fatmahussein.github.io/portfolio/',
+    source: 'https://fatmahussein.github.io/portfolio/',
     company: 'FACEBOOK',
   },
   {
@@ -58,8 +58,8 @@ const projects = [
     Desktimage: 'vectors/snap2.png',
     technologies: ['html', 'css', 'javascript'],
     id: 'swap',
-    live: '#',
-    source: '#',
+    live: 'https://fatmahussein.github.io/portfolio/',
+    source: 'https://fatmahussein.github.io/portfolio/',
     company: 'UBER',
   },
   {
@@ -68,8 +68,8 @@ const projects = [
     Mobimage: 'vectors/snap3.png',
     technologies: ['html', 'css', 'javascript'],
     id: 'yoga',
-    live: '#',
-    source: '#',
+    live: 'https://fatmahussein.github.io/portfolio/',
+    source: 'https://fatmahussein.github.io/portfolio/',
     company: 'CANOPY',
   },
   {
@@ -79,8 +79,8 @@ const projects = [
     id: 's',
     Mobimage: 'vectors/snap4.png',
     technologies: ['html', 'css', 'javascript'],
-    live: '#',
-    source: '#',
+    live: 'https://fatmahussein.github.io/portfolio/',
+    source: 'https://fatmahussein.github.io/portfolio/',
     company: 'FACEBOOK',
   },
 
@@ -120,12 +120,26 @@ for (const project of projects) {
   cardBody.appendChild(cardTitle);
   // Create the card list
   const cardList = document.createElement('ul');
-  cardList.classList.add('card-list');
-  //   cardList.setAttribute('id','lis');
+  if(project.id === 'swap'|| project.id === 'swap2'){
+    cardList.classList.add('card-list2')
+  }else{
+    cardList.classList.add('card-list');
+  }
+  
+  cardList.setAttribute('id','lis');
+  // if(project.id === 'desktp'){
+  // cardList.setAttribute('id','lis');}
+  // else if(project.id === 'swap' || project.id === 's'){
+  //   cardList.setAttribute('id','list2');
+  // }
+  
   cardBody.appendChild(cardList);
   // Create the card text
   const cardText = document.createElement('li');
   cardText.classList.add('card-text');
+  if(project.id = 'desktp'){
+    cardText.setAttribute('id','dt');
+  }  
   cardText.textContent = project.company;
   // technologies.join(', ');
   cardList.appendChild(cardText);
@@ -136,13 +150,19 @@ for (const project of projects) {
   // Create the dev
   const dev = document.createElement('li');
   dev.classList.add('dev');
+ 
   if (project.name === 'Tonic') {
     dev.textContent = 'Back End Dev';
-  } else if (project.name === 'Multi-Post Stories' || project.name === 'Facebook 360') {
+  } else if (project.name === 'Multi-Post Stories') {
+    dev.textContent = 'Full Stack Dev';
+  }
+  else if( project.name === 'Facebook 360') {
     dev.textContent = 'Full Stack Dev';
   } else if (project.name === 'Uber Navigation') {
+   
     dev.textContent = 'Lead Developer';
   }
+ 
   cardList.appendChild(dev);
   // Create the dot
   const dots = document.createElement('li');
@@ -161,20 +181,24 @@ for (const project of projects) {
   // create tags list
   const ul = document.createElement('ul');
   ul.classList.add('tags');
+  ul.setAttribute('id','tg');
   cardBody.appendChild(ul);
   // create li
   const btn1 = document.createElement('li');
-  btn1.classList.add('button1');
+   btn1.classList.add('button1');
+   btn1.setAttribute('id','html');
   btn1.textContent = project.technologies[0];
   ul.appendChild(btn1);
   // create li
   const btn2 = document.createElement('li');
   btn2.classList.add('button2');
+  btn2.setAttribute('id','css');
   btn2.textContent = project.technologies[1];
   ul.appendChild(btn2);
   // create li
   const btn3 = document.createElement('li');
   btn3.classList.add('button3');
+  btn3.setAttribute('id','js');
   btn3.textContent = project.technologies[2];
   ul.appendChild(btn3);
   // create button
@@ -185,10 +209,11 @@ for (const project of projects) {
     const bt = document.createElement('a');
     bt.classList.add('button');
     bt.textContent = 'see project';
-    bt.setAttribute('id', 'proj');
+    bt.setAttribute('id', 'proj','projectz');
     proj.appendChild(bt);
   } else if (window.innerWidth > 768) {
     proj.classList.add('project-Desktop');
+    proj.setAttribute('id','projectz');
     const bt = document.createElement('a');
     bt.classList.add('button');
     bt.textContent = 'see project';
@@ -201,8 +226,8 @@ for (const project of projects) {
 window.addEventListener('resize', () => this.location.reload());
 
 // modal
-const see = document.querySelector('.project');
-see.addEventListener('click', () => {
+const see = document.querySelectorAll('.project');
+see.forEach(btn => (btn.addEventListener('click', () => {
   const main = document.createElement('div');
   main.className = 'main-pop';
   const popup = document.createElement('div');
@@ -228,10 +253,10 @@ see.addEventListener('click', () => {
      </ul> 
       <hr id="hr-pop">
      <div class="project-pop">
-      <a id="proj" href="#" class="button" >See live &nbsp;<img src="vectors/Icon.png"></a>
+      <a id="proj" href="https://fatmahussein.github.io/portfolio/" class="button" >See live &nbsp;<img src="vectors/Icon.png"></a>
      </div>
      <div class="project-pop2">
-      <a id="proj" href="#" class="button" >See Source &nbsp;<img src="vectors/git.png"></a>
+      <a id="proj" href="https://github.com/fatmahussein/portfolio" class="button" >See Source &nbsp;<img src="vectors/git.png"></a>
      </div>
     </div>
 
@@ -245,11 +270,11 @@ see.addEventListener('click', () => {
   close.addEventListener('click', () => {
     body.removeChild(main);
   });
-});
+})));
 
-const open = document.querySelector('.project-Desktop');
 
-open.addEventListener('click', () => {
+const open = document.querySelectorAll('.project-Desktop');
+open.forEach(desktop => (desktop.addEventListener('click', () => {
   const mains = document.createElement('div');
   mains.className = 'main-pops';
   const dPopup = document.createElement('div');
@@ -287,10 +312,10 @@ open.addEventListener('click', () => {
      </ul> 
      <hr id="hr-pop">
      <div class="project-pop">
-      <a id="projp" href="#" class="button" >See live &nbsp;<img src="vectors/Icon.png"></a>
+      <a id="projp" href="https://fatmahussein.github.io/portfolio/" class="button" >See live &nbsp;<img src="vectors/Icon.png"></a>
      </div>
      <div class="project-pop2">
-      <a id="projp" href="#" class="button" >See Source &nbsp;<img src="vectors/git.png"></a>
+      <a id="projp" href="https://github.com/fatmahussein/portfolio" class="button" >See Source &nbsp;<img src="vectors/git.png"></a>
      </div>
     </div>
     </div>
@@ -305,35 +330,6 @@ open.addEventListener('click', () => {
   close.addEventListener('click', () => {
     body.removeChild(mains);
   });
-});
+})
+));
 
-// eslint-disable-next-line no-lone-blocks
-{ /* <div id="uno" class="card-pop">
-<h5 class="card-title-pop">Tonic<i class="fas fa-times"></i></h5>
-<ul class="card-list-pop">
-  <li class="card-text">CANOPY</li>
-  <li class="dot"></li>
-  <li class="dev">Back End Dev</li>
-  <li class="dot"></li>
-  <li class="year">2015</li>
-  </ul>
-<img id="one" class="card-img" src="vectors/snap.png" alt="Tonic project snapshot">
-<div class="left-block">
-<div class="card-body">
- <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
-   <ul class="tags-pop">
-   <li id="html"><a href="#" class="tags button1">html</a></li>
-   <li id="css"><a href="#" class="tags button2">css</a></li>
-   <li id="js"><a href="#" class="tags button3">javascript</a></li>
-   </ul>
-    <hr id="hr-pop">
-   <div class="project-pop">
-    <a id="proj" href="#" class="button" >See live &nbsp;<img src="vectors/Icon.png"></a>
-   </div>
-   <div class="project-pop2">
-    <a id="proj" href="#" class="button" >See Source &nbsp;<img src="vectors/git.png"></a>
-   </div>
-  </div>
-
-</div>
-</div> */ }

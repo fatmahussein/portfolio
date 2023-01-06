@@ -121,8 +121,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
 
 👤 **Gladwin Tshepo Ramantso**
 
--GitHub: [@tsheporamantso](https://github.com/tsheporamantso)
 - Twitter: [@ramgt001](https://twitter.com/home)
+- GitHub: [@tsheporamantso](https://github.com/tsheporamantso)
 - LinkedIn: [Tshepo Gladwin Ramantso](https://www.linkedin.com/in/tshepo-ramantso-b6a35433/)
 
 

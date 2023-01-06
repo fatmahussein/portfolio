@@ -5,7 +5,8 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    
+    - [Key Features](#key-features)
+      - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -46,7 +47,25 @@ HTML5, CSS3 and ES6
   </ul>
 </details
 
+<!-- Features -->
 
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[Use Grid and FlexBox]**
+- **[pop-up details window]**
+- **[Use JavaScript to manipulate DOM elements]**
+- **[Follow HTML and CSS best practices]**
+- **[Follow JavaScript best practices]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://fatmahussein.github.io/portfolio/)
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>

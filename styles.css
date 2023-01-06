@@ -371,8 +371,8 @@ h1 {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  
 }
+
 .card-pop {
   box-sizing: border-box;
   display: flex;
@@ -383,16 +383,19 @@ h1 {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+
   /* block-size: fit-content; */
-  overflow-y: scroll!important;
-  padding-left:5% ;
+  overflow-y: scroll !important;
+  padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
- padding-top: 28%;
+  padding-top: 28%;
 }
-.card:hover{
-  transform: scale(.9);
+
+.card:hover {
+  transform: scale(0.9);
 }
+
 .card #b {
   display: none;
 }
@@ -427,6 +430,7 @@ h1 {
   font-size: 32px;
   line-height: 44px;
 }
+
 .card-title-pop {
   display: flex;
   gap: 60%;
@@ -439,11 +443,12 @@ h1 {
   line-height: 44px;
 }
 
-.fa-times{
-  color:  #67798E;
+.fa-times {
+  color: #67798e;
   size: 20%;
   margin-top: 5%;
 }
+
 .card-list {
   display: flex;
   flex-direction: row;
@@ -453,6 +458,7 @@ h1 {
   width: 236px;
   height: 32px;
 }
+
 .card-list-pop {
   display: flex;
   flex-direction: row;
@@ -463,8 +469,6 @@ h1 {
   height: 32px;
   margin-left: -15%;
 }
-
-
 
 .card-text {
   width: 60px;
@@ -516,6 +520,7 @@ h1 {
   line-height: 24px;
   color: #344563;
 }
+
 .text-pop {
   width: 295px;
   height: 66px;
@@ -526,6 +531,7 @@ h1 {
   line-height: 24px;
   color: #344563;
 }
+
 .tags {
   display: flex;
   flex-direction: row;
@@ -536,8 +542,9 @@ h1 {
   height: 24px;
   padding-bottom: 20px;
 }
+
 .tags-pop {
-   display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0;
@@ -545,7 +552,6 @@ h1 {
   width: 203px;
   height: 24px;
   margin-top: 40%;
-
 }
 
 .button1 {
@@ -635,14 +641,16 @@ h1 {
   flex-direction: row;
   align-items: center;
   padding: 12px;
-   position: relative;
+  position: relative;
   width: 43%;
-  top:4%;
+  top: 4%;
+
   /* margin-top: 7%; */
-   height: 40px;
+  height: 40px;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
+
 .project-pop2 {
   box-sizing: border-box;
   display: flex;
@@ -655,6 +663,7 @@ h1 {
   height: 40px;
   left: 46%;
   top: -13%;
+
   /* margin-top: -25%; */
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -842,7 +851,6 @@ h1 {
   display: none;
 }
 
-
 #frm {
   position: absolute;
   height: 24px;
@@ -914,12 +922,13 @@ h1 {
   width: 303px;
   background: #dfe1e6;
 }
+
 #hr-pop {
   position: relative;
   height: 1px;
   left: 3%;
   width: 270px;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
   margin-top: 4%;
 }
 
@@ -1166,13 +1175,15 @@ button:focus {
 .card #two {
   display: none;
 }
+
 .card-img-pop {
   width: 100%;
   height: auto;
   margin: 2%;
   padding: 2%;
   margin-top: -10%;
-   }
+}
+
 .elp3 {
   position: absolute;
   right: 2%;
@@ -1181,9 +1192,11 @@ button:focus {
   color: white;
   transform: rotate(14deg);
 }
-.project-Desktop{
+
+.project-Desktop {
   display: none;
 }
+
 .elp5 {
   position: absolute;
   width: 31.11px;
@@ -1207,12 +1220,13 @@ button:focus {
 #p10 {
   display: none;
 }
-.main-pop{
+
+.main-pop {
   width: 100%;
   height: 100%;
   position: fixed;
   backdrop-filter: blur(2px);
-  background-color: rgb(0,0,0,30%);
+  background-color: rgb(0, 0, 0, 30%);
   top: 0%;
   padding-top: 5%;
   padding-left: 5%;
@@ -1230,19 +1244,20 @@ button:focus {
     width: 100%;
     justify-content: space-between;
   }
-.main-pops{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: rgb(0,0,0,50%);
-  top: 0%;
-  padding-top: 7%;
-  padding-left: 5%;
-  padding-right: 5%;
-  display: flex;
-  justify-content: center;
-  overflow-y: scroll!important;
-}
+
+  .main-pops {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 50%);
+    top: 0%;
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll !important;
+  }
 
   .hamburger {
     display: none;
@@ -1360,27 +1375,26 @@ button:focus {
     padding: 2%;
   }
 
-
   .card-pops {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left:16px;
-    padding-right:16px;
+    padding-left: 16px;
+    padding-right: 16px;
     gap: 12px;
     width: 90em;
-    height:80em;
+    height: 80em;
     background: #ffff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-   
-  
   }
-  .project{
+
+  .project {
     display: none;
   }
+
   .card-title-pops {
     display: flex;
     gap: 0;
@@ -1393,6 +1407,7 @@ button:focus {
     font-size: 32px;
     line-height: 44px;
   }
+
   .card-list-pops {
     display: flex;
     flex-direction: row;
@@ -1403,24 +1418,28 @@ button:focus {
     height: 32px;
     margin-left: -73%;
   }
+
   .card-img-pops {
     width: 100%;
     height: 60%;
     margin: 2%;
     padding: 1%;
     margin-top: -2%;
-     }
+  }
+
   .text {
     padding-bottom: 25%;
   }
-  .fa-times{
-    color:  #67798E;
+
+  .fa-times {
+    color: #67798e;
     margin-left: 45em;
     margin-top: 5%;
   }
+
   .text-pops {
     width: 50em;
-     height: 66px;
+    height: 66px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1450,42 +1469,44 @@ button:focus {
     display: flex;
     gap: 1%;
   }
-  .tags-pops{
-    display: flex;
-   flex-direction: row;
-   align-items: center;
-   padding: 0;
-   gap: 0.5em;
-   width: 18em;
-   height: 24px;
-   margin-top: 0%;
-   margin-left: -50%;
- }
 
- #git{
-  display: flex;
-  flex-direction: row;
-  font-family: 'Poppins',sans-serif;
-  align-items: center;
-  padding: 4px 0px;
-  width: 50px;
-  height: 24px;
-  text-decoration: none;
-  background: #ebebff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-}
-#css-pop{
+  .tags-pops {
     display: flex;
     flex-direction: row;
-    font-family: 'Poppins',sans-serif;
     align-items: center;
-    padding: 4px 0px;
+    padding: 0;
+    gap: 0.5em;
+    width: 18em;
+    height: 24px;
+    margin-top: 0%;
+    margin-left: -50%;
+  }
+
+  #git {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 4px 0;
+    width: 50px;
+    height: 24px;
+    text-decoration: none;
+    background: #ebebff;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  #css-pop {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 4px 0;
     width: 50px;
     height: 24px;
     text-decoration: none;
@@ -1500,75 +1521,79 @@ button:focus {
     margin-left: -20%;
   }
 
-#ruby{
-  display: flex;
-  flex-direction: row;
-  font-family: 'Poppins',sans-serif;
-  align-items: center;
-  padding: 4px 0px;
-  width: 50px;
-  height: 24px;
-  text-decoration: none;
-  background: #ebebff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  margin-left: -20%;
-}
-#js-pop{
-  display: flex;
-  flex-direction: row;
-  font-family: 'Poppins',sans-serif;
-  align-items: center;
-  padding: 4px 0px;
-  width: 50px;
-  height: 24px;
-  text-decoration: none;
-  background: #ebebff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  margin-left: -50%;
-}
-#bs{
-  display: flex;
-  flex-direction: row;
-  font-family: 'Poppins',sans-serif;
-  align-items: center;
-  padding: 4px 0px;
-  width: 50px;
-  height: 24px;
-  text-decoration: none;
-  background: #ebebff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  margin-left: -50%;
-}
-#hr-pop {
-  position: absolute;
-  height: 1px;
-  left: -115%;
-  width: 250px;
-  background-color: #EBECF0;
-  margin-top: 5%;
-  margin-left: 180%;
-}
-#con{
-  margin-left: -160%;
-}
+  #ruby {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 4px 0;
+    width: 50px;
+    height: 24px;
+    text-decoration: none;
+    background: #ebebff;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    margin-left: -20%;
+  }
+
+  #js-pop {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 4px 0;
+    width: 50px;
+    height: 24px;
+    text-decoration: none;
+    background: #ebebff;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    margin-left: -50%;
+  }
+
+  #bs {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 4px 0;
+    width: 50px;
+    height: 24px;
+    text-decoration: none;
+    background: #ebebff;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    margin-left: -50%;
+  }
+
+  #hr-pop {
+    position: absolute;
+    height: 1px;
+    left: -115%;
+    width: 250px;
+    background-color: #ebecf0;
+    margin-top: 5%;
+    margin-left: 180%;
+  }
+
+  #con {
+    margin-left: -160%;
+  }
 
   .project-Desktop {
     box-sizing: border-box;
@@ -1584,6 +1609,7 @@ button:focus {
     border-radius: 8px;
     top: calc(74% - 48px / 2);
   }
+
   .project-pop {
     box-sizing: border-box;
     display: flex;
@@ -1593,13 +1619,14 @@ button:focus {
     gap: 10px;
     position: absolute;
     width: 10%;
-     margin-top: 92%;
+    margin-top: 92%;
     margin-left: -7%;
     height: 40px;
     border: 1px solid #6070ff;
     border-radius: 8px;
   }
-  #projp{
+
+  #projp {
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1612,6 +1639,7 @@ button:focus {
     color: #396df2;
     text-decoration: none;
   }
+
   .project-pop2 {
     box-sizing: border-box;
     display: flex;
@@ -1626,7 +1654,7 @@ button:focus {
     border: 1px solid #6070ff;
     border-radius: 8px;
   }
-  
+
   .projectz {
     top: calc(78% - 48px / 2);
   }
@@ -1690,7 +1718,7 @@ button:focus {
   #yoga {
     display: none;
   }
- 
+
   .card-list {
     display: flex;
     flex-direction: row;
@@ -1925,7 +1953,7 @@ button:focus {
     margin-left: 10%;
   }
 
-  #swap .card-body .card-list2{
+  #swap .card-body .card-list2 {
     padding-top: 5%;
     width: 100%;
     gap: 2%;

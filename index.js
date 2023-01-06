@@ -120,26 +120,26 @@ for (const project of projects) {
   cardBody.appendChild(cardTitle);
   // Create the card list
   const cardList = document.createElement('ul');
-  if(project.id === 'swap'|| project.id === 'swap2'){
-    cardList.classList.add('card-list2')
-  }else{
+  if (project.id === 'swap' || project.id === 'swap2') {
+    cardList.classList.add('card-list2');
+  } else {
     cardList.classList.add('card-list');
   }
-  
-  cardList.setAttribute('id','lis');
+
+  cardList.setAttribute('id', 'lis');
   // if(project.id === 'desktp'){
   // cardList.setAttribute('id','lis');}
   // else if(project.id === 'swap' || project.id === 's'){
   //   cardList.setAttribute('id','list2');
   // }
-  
+
   cardBody.appendChild(cardList);
   // Create the card text
   const cardText = document.createElement('li');
   cardText.classList.add('card-text');
-  if(project.id = 'desktp'){
-    cardText.setAttribute('id','dt');
-  }  
+  if (project.id === 'desktp' || project.id === 'swap2' || project.id === 'desktp' || project.id === 's' || project.id === 'yoga' || project.id === 'uno') {
+    cardText.setAttribute('id', 'dt');
+  } else { cardText.setAttribute('id', ''); }
   cardText.textContent = project.company;
   // technologies.join(', ');
   cardList.appendChild(cardText);
@@ -150,19 +150,17 @@ for (const project of projects) {
   // Create the dev
   const dev = document.createElement('li');
   dev.classList.add('dev');
- 
+
   if (project.name === 'Tonic') {
     dev.textContent = 'Back End Dev';
   } else if (project.name === 'Multi-Post Stories') {
     dev.textContent = 'Full Stack Dev';
-  }
-  else if( project.name === 'Facebook 360') {
+  } else if (project.name === 'Facebook 360') {
     dev.textContent = 'Full Stack Dev';
   } else if (project.name === 'Uber Navigation') {
-   
     dev.textContent = 'Lead Developer';
   }
- 
+
   cardList.appendChild(dev);
   // Create the dot
   const dots = document.createElement('li');
@@ -181,24 +179,24 @@ for (const project of projects) {
   // create tags list
   const ul = document.createElement('ul');
   ul.classList.add('tags');
-  ul.setAttribute('id','tg');
+  ul.setAttribute('id', 'tg');
   cardBody.appendChild(ul);
   // create li
   const btn1 = document.createElement('li');
-   btn1.classList.add('button1');
-   btn1.setAttribute('id','html');
+  btn1.classList.add('button1');
+  btn1.setAttribute('id', 'html');
   btn1.textContent = project.technologies[0];
   ul.appendChild(btn1);
   // create li
   const btn2 = document.createElement('li');
   btn2.classList.add('button2');
-  btn2.setAttribute('id','css');
+  btn2.setAttribute('id', 'css');
   btn2.textContent = project.technologies[1];
   ul.appendChild(btn2);
   // create li
   const btn3 = document.createElement('li');
   btn3.classList.add('button3');
-  btn3.setAttribute('id','js');
+  btn3.setAttribute('id', 'js');
   btn3.textContent = project.technologies[2];
   ul.appendChild(btn3);
   // create button
@@ -209,11 +207,11 @@ for (const project of projects) {
     const bt = document.createElement('a');
     bt.classList.add('button');
     bt.textContent = 'see project';
-    bt.setAttribute('id', 'proj','projectz');
+    bt.setAttribute('id', 'proj', 'projectz');
     proj.appendChild(bt);
   } else if (window.innerWidth > 768) {
     proj.classList.add('project-Desktop');
-    proj.setAttribute('id','projectz');
+    proj.setAttribute('id', 'projectz');
     const bt = document.createElement('a');
     bt.classList.add('button');
     bt.textContent = 'see project';
@@ -227,7 +225,7 @@ window.addEventListener('resize', () => this.location.reload());
 
 // modal
 const see = document.querySelectorAll('.project');
-see.forEach(btn => (btn.addEventListener('click', () => {
+see.forEach((btn) => (btn.addEventListener('click', () => {
   const main = document.createElement('div');
   main.className = 'main-pop';
   const popup = document.createElement('div');
@@ -272,9 +270,8 @@ see.forEach(btn => (btn.addEventListener('click', () => {
   });
 })));
 
-
 const open = document.querySelectorAll('.project-Desktop');
-open.forEach(desktop => (desktop.addEventListener('click', () => {
+open.forEach((desktop) => (desktop.addEventListener('click', () => {
   const mains = document.createElement('div');
   mains.className = 'main-pops';
   const dPopup = document.createElement('div');
@@ -332,4 +329,3 @@ open.forEach(desktop => (desktop.addEventListener('click', () => {
   });
 })
 ));
-

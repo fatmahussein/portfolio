@@ -600,6 +600,18 @@ h1 {
   color: #6070ff;
 }
 
+.button1 a {
+  text-decoration: none;
+}
+
+.button2 a {
+  text-decoration: none;
+}
+
+.button3 a {
+  text-decoration: none;
+}
+
 #css {
   font-family: 'Poppins', sans-serif;
   font-style: normal;

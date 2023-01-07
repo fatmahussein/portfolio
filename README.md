@@ -58,6 +58,8 @@ HTML5, CSS3 and ES6
 - **Follow HTML and CSS best practices**
 - **Follow JavaScript best practices**
 - **Form Validation**
+- **Preserve data in the browser**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->

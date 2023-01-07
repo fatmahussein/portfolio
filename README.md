@@ -51,14 +51,13 @@ HTML5, CSS3 and ES6
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[Use Grid and FlexBox]**
-- **[pop-up details window]**
-- **[Use JavaScript to manipulate DOM elements]**
-- **[Follow HTML and CSS best practices]**
-- **[Follow JavaScript best practices]**
-
+- **Use Grid and FlexBox**
+- **pop-up details window**
+- **Use JavaScript to manipulate DOM elements**
+- **Follow HTML and CSS best practices**
+- **Follow JavaScript best practices**
+- **Form Validation**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -122,8 +121,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
 
 👤 **Gladwin Tshepo Ramantso**
 
--GitHub: [@tsheporamantso](https://github.com/tsheporamantso)
 - Twitter: [@ramgt001](https://twitter.com/home)
+- GitHub: [@tsheporamantso](https://github.com/tsheporamantso)
 - LinkedIn: [Tshepo Gladwin Ramantso](https://www.linkedin.com/in/tshepo-ramantso-b6a35433/)
 
 
@@ -166,6 +165,6 @@ Please click on the link https://nodejs.org/en/download/  to get the  setup.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

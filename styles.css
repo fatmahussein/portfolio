@@ -6,7 +6,7 @@ html * {
 body {
   position: relative;
   width: 100%;
-  height: 5410px;
+  height: 100vh;
   background: #f7f7f9;
 }
 
@@ -374,22 +374,23 @@ h1 {
 }
 
 .card-pop {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 12px;
+position: absolute;
+width: 343px;
+height: 713px;
+/* height: -web-kit-fill-available; */
+left: calc(50% - 343px/2);
+top: 60px;
+/* min-height: 0px; */
+background: #FFFFFF;
+border: 1px solid #DFE1E6;
+border-radius: 16px;
 
-  /* block-size: fit-content; */
-  overflow-y: scroll !important;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  padding-top: 28%;
 }
 
 .card:hover {
@@ -600,6 +601,18 @@ h1 {
   color: #6070ff;
 }
 
+.button1 a {
+  text-decoration: none;
+}
+
+.button2 a {
+  text-decoration: none;
+}
+
+.button3 a {
+  text-decoration: none;
+}
+
 #css {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -641,14 +654,15 @@ h1 {
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  position: relative;
-  width: 43%;
-  top: 4%;
-
+   width: 8em;
   /* margin-top: 7%; */
   height: 40px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+}
+.modal-button{
+position: absolute;
+bottom:2em;
 }
 
 .project-pop2 {
@@ -658,13 +672,12 @@ h1 {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  position: relative;
-  width: 55%;
   height: 40px;
-  left: 46%;
-  top: -13%;
-
-  /* margin-top: -25%; */
+  left: 8.9em;
+  width: 10em;
+  position: absolute;
+  bottom:0em;
+ /* margin-top: -25%; */
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
@@ -924,12 +937,19 @@ h1 {
 }
 
 #hr-pop {
-  position: relative;
+  /* position: relative;
   height: 1px;
   left: 3%;
   width: 270px;
   background-color: #ebecf0;
-  margin-top: 4%;
+  margin-top: 4%; */
+
+position: absolute;
+height: 0px;
+left: 15px;
+right: 15px;
+top: calc(84% - 0px/2 - 0.5px);
+border: 1px solid #EBECF0;
 }
 
 #frm9 {
@@ -1222,17 +1242,55 @@ button:focus {
 }
 
 .main-pop {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
   position: fixed;
   backdrop-filter: blur(2px);
   background-color: rgb(0, 0, 0, 30%);
   top: 0%;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 10% 3%;
   display: flex;
   justify-content: center;
+} */
+flex: 1;
+overflow: scroll;
+position: fixed;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+backdrop-filter: blur(2px);
+background-color: rgb(0, 0, 0, 30%);
+/* Neutrals/N50 */
+
+/* background: #C1C7D0; */
+/* mix-blend-mode: multiply; */
+}
+
+.error {
+  height: 50%;
+  width: 50%;
+  margin-top: -2%;
+}
+
+.error-message {
+  visibility: hidden;
+  height: 3%;
+  width: 85%;
+  color: #c03;
+  background-color: #acb7c3;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px;
+  position: absolute;
+  word-wrap: break-word;
+  float: left;
+  left: 7%;
+  line-height: 20px;
+  text-shadow: 1px 1px rgba(250, 250, 250, 0.3);
+
+  /* margin-bottom: 25px; */
 }
 
 /* Media query for devices greater than 768 - Desktop */
@@ -1305,6 +1363,32 @@ button:focus {
     align-items: center;
     letter-spacing: 0.37px;
     justify-content: center;
+  }
+
+  .error {
+    height: 50%;
+    width: 50%;
+    margin-top: -2%;
+  }
+
+  .error-message {
+    visibility: hidden;
+    height: 9%;
+    width: 15%;
+    color: #c03;
+    background-color: #acb7c3;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px;
+    position: absolute;
+    word-wrap: break-word;
+    float: left;
+    left: 67%;
+    line-height: 20px;
+    text-shadow: 1px 1px rgba(250, 250, 250, 0.3);
+
+    /* margin-bottom: 25px; */
   }
 
   .head {
@@ -1432,7 +1516,7 @@ button:focus {
     padding-bottom: 25%;
   }
 
-  .fa-times {
+  .fa-times-pop {
     color: #67798e;
     margin-left: 45em;
     margin-top: 5%;
@@ -1447,7 +1531,8 @@ button:focus {
     font-size: 12px;
     line-height: 24px;
     color: #344563;
-    margin-left: -93%;
+    position: absolute;
+    left: 6rem;
   }
 
   .grid-container {
@@ -1589,7 +1674,7 @@ button:focus {
     width: 250px;
     background-color: #ebecf0;
     margin-top: 5%;
-    margin-left: 180%;
+    margin-left: 175%;
   }
 
   #con {
@@ -1620,8 +1705,8 @@ button:focus {
     gap: 10px;
     position: absolute;
     width: 10%;
-    margin-top: 92%;
-    margin-left: -7%;
+    margin-top: 93%;
+    margin-left: 0%;
     height: 40px;
     border: 1px solid #6070ff;
     border-radius: 8px;
@@ -1648,10 +1733,11 @@ button:focus {
     align-items: center;
     padding: 12px;
     gap: 10px;
-    width: 70%;
+    width: 12%;
     height: 40px;
-    margin-left: -13%;
-    margin-top: 62%;
+    position: absolute;
+    left: 53rem;
+    top: 71rem;
     border: 1px solid #6070ff;
     border-radius: 8px;
   }

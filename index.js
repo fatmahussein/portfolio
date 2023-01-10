@@ -1,6 +1,3 @@
-/* eslint-disable prefer-destructuring */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable max-len */
 // -----------ADD FUNCTION TO HAMBURGER MENU BAR------------
 const body = document.querySelector('body');
 const hamburger = document.querySelector('.hamburger');
@@ -87,21 +84,22 @@ const projects = [
 ];
 
 const projectsContainer = document.querySelector('.grid-item');
-for (const project of projects) {
+
+for (let i = 0; i < projects.length; i += 1) {
   // Create the card
   const card = document.createElement('div');
   card.classList.add('card');
-  card.setAttribute('id', project.id);
+  card.setAttribute('id', projects[i].id);
   // Create the image
   const image = document.createElement('img');
 
   if (window.innerWidth < 768) {
     image.classList.add('card-img');
-    image.src = project.Mobimage;
+    image.src = projects[i].Mobimage;
   } else if (window.innerWidth > 768) {
     image.classList.add('card-img');
     image.setAttribute('id', 'two');
-    image.src = project.Desktimage;
+    image.src = projects[i].Desktimage;
   }
   card.appendChild(image);
   // Create the left block
@@ -116,31 +114,25 @@ for (const project of projects) {
   // Create the card title
   const cardTitle = document.createElement('h5');
   cardTitle.classList.add('card-title');
-  cardTitle.textContent = project.name;
+  cardTitle.textContent = projects[i].name;
   cardBody.appendChild(cardTitle);
   // Create the card list
   const cardList = document.createElement('ul');
-  if (project.id === 'swap' || project.id === 'swap2') {
+  if (projects[i].id === 'swap' || projects[i].id === 'swap2') {
     cardList.classList.add('card-list2');
   } else {
     cardList.classList.add('card-list');
   }
 
   cardList.setAttribute('id', 'lis');
-  // if(project.id === 'desktp'){
-  // cardList.setAttribute('id','lis');}
-  // else if(project.id === 'swap' || project.id === 's'){
-  //   cardList.setAttribute('id','list2');
-  // }
-
   cardBody.appendChild(cardList);
   // Create the card text
   const cardText = document.createElement('li');
   cardText.classList.add('card-text');
-  if (project.id === 'desktp' || project.id === 'swap2' || project.id === 'desktp' || project.id === 's' || project.id === 'yoga' || project.id === 'uno') {
+  if (projects[i].id === 'desktp' || projects[i].id === 'swap2' || projects[i].id === 'desktp' || projects[i].id === 's' || projects[i].id === 'yoga' || projects[i].id === 'uno') {
     cardText.setAttribute('id', 'dt');
   } else { cardText.setAttribute('id', ''); }
-  cardText.textContent = project.company;
+  cardText.textContent = projects[i].company;
   // technologies.join(', ');
   cardList.appendChild(cardText);
   // Create the dot
@@ -151,13 +143,13 @@ for (const project of projects) {
   const dev = document.createElement('li');
   dev.classList.add('dev');
 
-  if (project.name === 'Tonic') {
+  if (projects[i].name === 'Tonic') {
     dev.textContent = 'Back End Dev';
-  } else if (project.name === 'Multi-Post Stories') {
+  } else if (projects[i].name === 'Multi-Post Stories') {
     dev.textContent = 'Full Stack Dev';
-  } else if (project.name === 'Facebook 360') {
+  } else if (projects[i].name === 'Facebook 360') {
     dev.textContent = 'Full Stack Dev';
-  } else if (project.name === 'Uber Navigation') {
+  } else if (projects[i].name === 'Uber Navigation') {
     dev.textContent = 'Lead Developer';
   }
 
@@ -174,7 +166,7 @@ for (const project of projects) {
   // Create the card description
   const cardDescription = document.createElement('p');
   cardDescription.classList.add('text');
-  cardDescription.textContent = project.description;
+  cardDescription.textContent = projects[i].description;
   cardBody.appendChild(cardDescription);
   // create tags list
   const ul = document.createElement('ul');
@@ -185,19 +177,22 @@ for (const project of projects) {
   const btn1 = document.createElement('li');
   btn1.classList.add('button1');
   btn1.setAttribute('id', 'html');
-  btn1.textContent = project.technologies[0];
+  btn1.innerHTML = `
+    <li ><a href="#">${projects[i].technologies[0]}</a></li>`;
   ul.appendChild(btn1);
   // create li
   const btn2 = document.createElement('li');
   btn2.classList.add('button2');
   btn2.setAttribute('id', 'css');
-  btn2.textContent = project.technologies[1];
+  btn2.innerHTML = `
+  <li id="css"><a href="#">${projects[i].technologies[1]}</a></li>`;
   ul.appendChild(btn2);
   // create li
   const btn3 = document.createElement('li');
   btn3.classList.add('button3');
   btn3.setAttribute('id', 'js');
-  btn3.textContent = project.technologies[2];
+  btn3.innerHTML = `
+  <li id="js"><a href="#">${projects[i].technologies[2]}</a></li>`;
   ul.appendChild(btn3);
   // create button
   const proj = document.createElement('div');
@@ -250,11 +245,13 @@ see.forEach((btn) => (btn.addEventListener('click', () => {
      <li id="js"><a href="#" class="tags button3">javascript</a></li>
      </ul> 
       <hr id="hr-pop">
+      <div class = "modal-button">
      <div class="project-pop">
       <a id="proj" href="https://fatmahussein.github.io/portfolio/" class="button" >See live &nbsp;<img src="vectors/Icon.png"></a>
      </div>
      <div class="project-pop2">
       <a id="proj" href="https://github.com/fatmahussein/portfolio" class="button" >See Source &nbsp;<img src="vectors/git.png"></a>
+     </div>
      </div>
     </div>
 
@@ -277,7 +274,7 @@ open.forEach((desktop) => (desktop.addEventListener('click', () => {
   const dPopup = document.createElement('div');
   dPopup.className = 'card-pops';
   dPopup.innerHTML = `
-  <h5 class="card-title-pops">Tonic<i class="fas fa-times fa-2xs"></i></h5>
+  <h5 class="card-title-pops">Tonic<i id="fa-times-pop" class="fas fa-times fa-2xs"></i></h5>
   <ul class="card-list-pops">
     <li class="card-text">CANOPY</li>
     <li class="dot"></li>
@@ -288,35 +285,29 @@ open.forEach((desktop) => (desktop.addEventListener('click', () => {
   
   <img id="two" class="card-img-pops" src="vectors/snap20.png" alt="Tonic project snapshot">
 
-  <div class="left-block">
+  
   <div class="card-body">
-    <div class="row ">
-      <div class="col-8">
-      <p class="text-pops">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
-    </div>
-    <div class="col-4">
-    <ul class=" row tags-pops">
-    <div class="row" >
-      <div class="col"><li id="html"><a href="#" class="tags button1">html</a></li></div>
-      <div class="col"><li id="css-pop"><a href="#" class="tags button2">css</a></li></div>
-      <div class="col"> <li id="js-pop"><a href="#" class="tags button3">javascript</a></li></div>
-     </div>
-    <div class="row">
-      <div class="col"><li id="git"><a href="#" class=" button3">github</a></li></div>
-        <div class="col"><li id="ruby"><a href="#" class=" button3">ruby</a></li></div>
-          <div class="col"><li id="bs"><a href="#" class=" button3">Bootstraps</a></li></div>
-    </div>
+    <p class="text-pops">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+    <ul class=" tags-pops">
+    
+      <li id="html-pop"><a href="#" class="tags button1">html</a></li>
+      <li id="css-pop"><a href="#" class="tags button2">css</a></li>
+      <li id="js-pop"><a href="#" class="tags button3">javascript</a></li>  
+      <li id="git"><a href="#" class=" button3">github</a></li>
+      <li id="ruby"><a href="#" class=" button3">ruby</a></li>
+      <li id="bs"><a href="#" class=" button3">Bootstraps</a></li>
+
      </ul> 
-     <hr id="hr-pop">
-     <div class="project-pop">
+     
+     <hr id="hr-pops">
+     <div class="project-pops">
       <a id="projp" href="https://fatmahussein.github.io/portfolio/" class="button" >See live &nbsp;<img src="vectors/Icon.png"></a>
      </div>
-     <div class="project-pop2">
+     <div class="project-pops2">
       <a id="projp" href="https://github.com/fatmahussein/portfolio" class="button" >See Source &nbsp;<img src="vectors/git.png"></a>
      </div>
-    </div>
-    </div>
-  </div>
+   
+    
   </div>
   
   `;
@@ -329,3 +320,14 @@ open.forEach((desktop) => (desktop.addEventListener('click', () => {
   });
 })
 ));
+
+// VALIDATE FORM
+const form = document.querySelector('#register');
+const email = document.querySelector('#email');
+const errorMessage = document.querySelector('.error-message');
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    errorMessage.style.visibility = 'visible';
+    event.preventDefault();
+  }
+});

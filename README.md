@@ -39,23 +39,13 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://react.dev/">React</a></li>
-    <li><a href="https://www.w3schools.com/css/">css</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Form backend service</summary>
-  <ul>
-    <li><a href="https://formspree.io/html/">formspree</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript (ES6+)</a></li>
   </ul>
 </details>
 
 <!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-- **React slick carousel**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -76,21 +66,21 @@
 In order to run this project you need:
 
 - web browser 
-- git-syn 
+- git
 - code editor
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/fatmahussein/fatma-portfolio.git
+git clone https://github.com/fatmahussein/portfolio.git
 
 ### Install
 
-To install all dependencies, run:
-```
-npm install
-```
+No installation required.
+
+To run the project, simply open `index.html` in your browser.
+
 
 ### Usage
 
@@ -99,23 +89,6 @@ To run the project, execute the following command:
 To run the project, follow these instructions:
 
 - Clone this repo to your local machine.
-
-### Run tests
-
-To run tests, run the following command:
-
-- Track HTML linter errors run:
-```
-npx hint .
-```
-- Track CSS linter errors run:
-```
-npx stylelint "**/*.{css,scss}"
-```
-- Track JavaScript linter errors run:
-```
-npx eslint .
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,14 +104,6 @@ npx eslint .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Add typewriter css**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -146,7 +111,7 @@ npx eslint .
 Contributions, issues, and feature requests are welcome!
 
 
-Feel free to check the [issues page](https://github.com/fatmahussein/fatma-portfolio/issues).
+Feel free to check the [issues page](https://github.com/fatmahussein/portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
